@@ -1,2 +1,3 @@
 # nmap-grepper
-Grep Useful data from Nmap outputs
+
+Grep services & useful data from Nmap outputs.
