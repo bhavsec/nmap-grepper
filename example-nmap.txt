@@ -1,0 +1,96 @@
+nmap -sC -sV -p21,80,135,139,445,5040,8081,49664,49665,49666,49667,49668,49669 192.168.248.61 -v 
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-11-02 07:44 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 07:44
+Completed NSE at 07:44, 0.00s elapsed
+Initiating NSE at 07:44
+Completed NSE at 07:44, 0.00s elapsed
+Initiating NSE at 07:44
+Completed NSE at 07:44, 0.00s elapsed
+Initiating Ping Scan at 07:44
+Scanning 192.168.248.61 [4 ports]
+Completed Ping Scan at 07:44, 0.06s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 07:44
+Completed Parallel DNS resolution of 1 host. at 07:44, 0.03s elapsed
+Initiating SYN Stealth Scan at 07:44
+Scanning 192.168.248.61 [13 ports]
+Discovered open port 135/tcp on 192.168.248.61
+Discovered open port 445/tcp on 192.168.248.61
+Discovered open port 21/tcp on 192.168.248.61
+Discovered open port 139/tcp on 192.168.248.61
+Discovered open port 80/tcp on 192.168.248.61
+Discovered open port 49666/tcp on 192.168.248.61
+Discovered open port 49669/tcp on 192.168.248.61
+Discovered open port 49665/tcp on 192.168.248.61
+Discovered open port 49664/tcp on 192.168.248.61
+Discovered open port 5040/tcp on 192.168.248.61
+Discovered open port 49668/tcp on 192.168.248.61
+Discovered open port 49667/tcp on 192.168.248.61
+Discovered open port 8081/tcp on 192.168.248.61
+Completed SYN Stealth Scan at 07:44, 0.07s elapsed (13 total ports)
+Initiating Service scan at 07:44
+Scanning 13 services on 192.168.248.61
+Service scan Timing: About 53.85% done; ETC: 07:45 (0:00:45 remaining)
+Completed Service scan at 07:46, 159.90s elapsed (13 services on 1 host)
+NSE: Script scanning 192.168.248.61.
+Initiating NSE at 07:46
+Completed NSE at 07:47, 14.13s elapsed
+Initiating NSE at 07:47
+Completed NSE at 07:47, 1.04s elapsed
+Initiating NSE at 07:47
+Completed NSE at 07:47, 0.00s elapsed
+Nmap scan report for 192.168.248.61
+Host is up (0.014s latency).
+
+PORT      STATE SERVICE       VERSION
+21/tcp    open  ftp           Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+80/tcp    open  http          Microsoft IIS httpd 10.0
+|_http-cors: HEAD GET POST PUT DELETE TRACE OPTIONS CONNECT PATCH
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: BaGet
+|_http-favicon: Unknown favicon MD5: 8D9ADDAFA993A4318E476ED8EB0C8061
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds?
+5040/tcp  open  unknown
+8081/tcp  open  http          Jetty 9.4.18.v20190429
+|_http-title: Nexus Repository Manager
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: Nexus/3.21.0-05 (OSS)
+| http-robots.txt: 2 disallowed entries 
+|_/repository/ /service/
+|_http-favicon: Unknown favicon MD5: 9A008BECDE9C5F250EDAD4F00E567721
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2022-11-02T11:46:50
+|_  start_date: N/A
+
+NSE: Script Post-scanning.
+Initiating NSE at 07:47
+Completed NSE at 07:47, 0.00s elapsed
+Initiating NSE at 07:47
+Completed NSE at 07:47, 0.00s elapsed
+Initiating NSE at 07:47
+Completed NSE at 07:47, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 175.56 seconds
+           Raw packets sent: 17 (724B) | Rcvd: 14 (600B)
+zsh: segmentation fault  nmap -sC -sV -p21,80,135,139,445,5040,8081,49664,49665,49666,49667,49668,4966
